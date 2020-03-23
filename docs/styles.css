@@ -1,12 +1,12 @@
-/* Add a black background color to the top navigation */
+
+html, body, html * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 .navTitle{
   font-size: 27px;
   color: white;
   padding: 1px 16px;
-}
-
-h1, h2, h3, h4, h5, h6, a, span, div {
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .mainContent {
@@ -18,4 +18,14 @@ h1, h2, h3, h4, h5, h6, a, span, div {
 
 .body {
     background-color: #ffb157;
+}
+
+.instruction-number {
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ingredients-list {
+    padding-inline-start: 23px;
 }
