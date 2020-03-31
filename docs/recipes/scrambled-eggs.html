@@ -13,6 +13,7 @@
     <title>Dilan's Cooking Website</title>
 </head>
 
+<div id="particles-js"></div>
 <body class="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand navTitle" href="../index.html">Dilan's Cooking Website</a>
@@ -50,7 +51,7 @@
 
                 <div class="col-4">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gordon_Ramsay%27s_Scrambled_Eggs_%2817244690656%29.jpg/600px-Gordon_Ramsay%27s_Scrambled_Eggs_%2817244690656%29.jpg" class="img-fluid"
-                        alt="Responsive image">
+                        alt="scrambled-eggs">
                 </div>
 
                 <div class="col-8">
@@ -114,7 +115,7 @@
                 <div class="row">
 
                     <div class="col-12">
-                        <h3>Preperation</h3>
+                        <h3>Preparation</h3>
                     </div>
 
                 </div>
@@ -195,16 +196,22 @@
             </div>
 
         </div>
+        
+        <hr />
 
-
-    </main>
-
-    <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://github.com/Dilan1020"> Dilan Ozkaynak</a>
         </div>
-    </footer>
 
+    </main>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            particlesJS("particles-js", { "particles": { "number": { "value": 400, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#fff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 10, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2 }, "move": { "enable": true, "speed": 1, "direction": "bottom", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "bubble" }, "onclick": { "enable": false, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 0.5 } }, "bubble": { "distance": 400, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

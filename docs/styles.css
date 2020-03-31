@@ -14,10 +14,7 @@ html, body, html * {
     margin: 0 auto;
     background-color: #f1f1f1;
     padding: 20px 20px;
-}
-
-.body {
-    background-color: #ffb157;
+    min-height: 90vh;
 }
 
 .instruction-number {
@@ -29,3 +26,6 @@ html, body, html * {
 .ingredients-list {
     padding-inline-start: 23px;
 }
+
+canvas{ display: block; vertical-align: bottom; }
+#particles-js{ position:fixed; width: 100vw; height: 100vh; top: 0; left: 0; background-color: #ffb157; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: -1;}
