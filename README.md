@@ -8,7 +8,7 @@ This website outlines 3 of my favorite cooking recipes. It details a general out
 All external assets are credited in `assets/ASSETS.md`. All other images found in my site are original.
 
 ## Frameworks
-This site uses [one of the varius Material Bootstrap frameworks](https://fezvrasta.github.io/bootstrap-material-design/). This framework is responsible for the 'cards' on the home page and the site-wide navigation bar.
+This site uses [one of the various Material Bootstrap frameworks](https://fezvrasta.github.io/bootstrap-material-design/). This framework is responsible for the 'cards' on the home page and the site-wide navigation bar.
 
 ## Javascript
 Also, this site features an open source [JavaScript library called particles.js](https://vincentgarreau.com/particles.js/) to give the 'snowing' animation featured in the background on all of my pages.
